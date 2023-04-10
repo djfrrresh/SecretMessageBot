@@ -1027,3 +1027,12 @@ Stack trace:
 #4 /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_bot.php(17): include('/home/k88978/pu...')
 #5 {main}
   thrown in /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_db.php on line 27
+[10-Apr-2023 14:28:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null in /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_db.php:27
+Stack trace:
+#0 /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_db.php(27): PDOStatement->execute()
+#1 /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_functions.php(35): cocktail_callback_data(NULL, NULL, NULL)
+#2 /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_callback.php(4): cocktail_callback(NULL, NULL, NULL)
+#3 /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_switch/cocktail_general_switch.php(54): include('/home/k88978/pu...')
+#4 /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_bot.php(17): include('/home/k88978/pu...')
+#5 {main}
+  thrown in /home/k88978/public_html/incrediblebot.ru/world_cocktail_bot/cocktail_db.php on line 27
