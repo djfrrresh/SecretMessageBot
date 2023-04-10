@@ -23,8 +23,7 @@ function sendRequest($method, $post = '') {
     // Выполняет запрос cURL и возвращает данные
     curl_exec($ch);
 
-    // Проверяем наличие ошибок, не комментировать нижние три строки и return $http_code,
-    // чтобы не было ошибок с проверкой всех юзеров ботов и кол-ва забаненных
+    // Проверяем наличие ошибок
     if (!curl_errno($ch)) {
         global $http_code;
         $http_code = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
@@ -62,26 +61,6 @@ function sendRequest($method, $post = '') {
         sendRequest('sendMessage', $error_post);
     }
 }
-
-//function sendDocument($chat_id, $file)
-//{
-//    $url = curl_init('https://api.telegram.org/bot' . BOT_TOKEN . '/sendDocument?chat_id=' . $chat_id);
-//
-//    $ch = curl_init();
-//    curl_setopt($ch, CURLOPT_URL, $url);
-//    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-//    curl_setopt($ch, CURLOPT_POST, 1);
-//
-//    $cFile = new CURLFile($file);
-//    curl_setopt($ch, CURLOPT_POSTFIELDS, [
-//        "document" => $cFile
-//    ]);
-//
-//    $result = curl_exec($ch);
-//    curl_close($ch);
-//
-//    return $result;
-//}
 
 // Получить id всех юзеров ботов, отметить тех, кто забанил бота
 function get_all_users_id_func($bot_id, $bot_token, $users_db)
