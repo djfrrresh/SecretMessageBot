@@ -1,6 +1,6 @@
 # SecretMessageBot | PHP Telegram bot
 
-Bot for anonymous communication in a group. Write messages tagging a specific person, the rest of the members will not be able to see them
+Bot for anonymous communication in a group. Write messages tagging a specific person, the rest of the members will not be able to see them. The bot has a function to change the language from Russian to English
 
 ### Screenshots
 
