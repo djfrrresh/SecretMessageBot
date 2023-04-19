@@ -17,7 +17,7 @@ function sendRequest($method, $post = '') {
     curl_exec($ch);
 }
 
-$secret_key = 'eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6ImI1dGd3OS0wMCIsInVzZXJfaWQiOiI3OTAyMjMwNDMxOCIsInNlY3JldCI6Ijc2NDc0OGU1NjQxNDgxNDdjZDFlZDhlNTI3ZWU0MDM4MWZkNjNkMjgyZjM2YzE5NmJkNDQ2ODA2NGE3Mzk0NzcifX0=';
+$secret_key = 'SECRET';
 
 $sha256_hash_header = $_SERVER['HTTP_X_API_SIGNATURE_SHA256']; // Получаю заголовок
 
