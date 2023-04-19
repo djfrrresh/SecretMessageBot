@@ -90,7 +90,7 @@ I work in Inline - Mode, which means that <b>I do not even need to be invited to
 
 Type /help for instructions and /language for language selection',
 
-    'developer' => '🧑‍💻 Developer — @fakin_kiska
+    'developer' => '🧑‍💻 Developer — @just_eugeny
     
 🥝 You can <b>support</b> the developer by clicking on the link below for a <b>QIWI wallet!</b>',
 
