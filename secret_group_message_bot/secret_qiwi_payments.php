@@ -3,8 +3,8 @@
 include '../vendor/autoload.php'; // Установка компонентов для работы функций QIWI SDK
 
 // Обязательные ключи для перевода
-define('SECRET_KEY', 'eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6ImI1dGd3OS0wMCIsInVzZXJfaWQiOiI3OTAyMjMwNDMxOCIsInNlY3JldCI6Ijc2NDc0OGU1NjQxNDgxNDdjZDFlZDhlNTI3ZWU0MDM4MWZkNjNkMjgyZjM2YzE5NmJkNDQ2ODA2NGE3Mzk0NzcifX0=');
-define('PUBLIC_KEY', '48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPptJfFd3L7dP7nRXNEsLNLooHWCGMDaJrQr6okVb4qek7SHGKb56GrEZzE7DYrZmaqQ9vyJQdmvWMcyJadxjGkMAZZG5EaB6Qo9SFzVzE6');
+define('SECRET_KEY', 'SECRET');
+define('PUBLIC_KEY', 'SECRET');
 
 $billPayments = new Qiwi\Api\BillPayments(SECRET_KEY);
 
