@@ -9,7 +9,7 @@ if ($user_id == 915597301) {
             get_all_users_id_func($bot_id, $bot_token, $users_db);
             break;
         case 'Админ панель':
-            $cocktails_button = [
+            $buttons = [
                 [['text' => 'Количество пользователей']],
                 [['text' => 'В меню']]
             ];
